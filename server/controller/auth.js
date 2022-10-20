@@ -25,6 +25,9 @@ class Auth {
   }
 
   /* User Registration/Signup controller  */
+
+
+
   async postSignup(req, res) {
     let { name, email, password, cPassword } = req.body;
     let error = {};
@@ -99,6 +102,10 @@ class Auth {
       }
     }
   }
+
+
+
+  
 
   /* User Login/Signin controller  */
   async postSignin(req, res) {

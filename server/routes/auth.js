@@ -3,6 +3,8 @@ const router = express.Router();
 const authController = require("../controller/auth");
 const { loginCheck, isAuth, isAdmin } = require("../middleware/auth");
 
+
+// Tao route cho signup 
 router.post("/isadmin", authController.isAdmin);
 router.post("/signup", authController.postSignup);
 router.post("/signin", authController.postSignin);
