@@ -75,7 +75,8 @@ const ProductDetailsSectionTwo = (props) => {
         {data.menu ? (
           <div className="mt-6">{singleProduct.pDescription}</div>
         ) : (
-          <RatingReview />
+          // <RatingReview />
+          ''
         )}
       </section>
       <div className="m-4 md:mx-8 md:my-6 flex justify-center capitalize font-light tracking-widest bg-white border-t border-b text-gray-800 px-4 py-4 space-x-4">

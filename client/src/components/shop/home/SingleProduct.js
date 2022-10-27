@@ -99,7 +99,7 @@ const SingleProduct = (props) => {
                 {/* WhisList Logic  */}
                 <div className="absolute top-0 right-0 mx-2 my-2 md:mx-4">
                   <svg
-                    onClick={(e) => isWishReq(e, item._id, setWlist)}
+                    // onClick={(e) => isWishReq(e, item._id, setWlist)}
                     className={`${
                       isWish(item._id, wList) && "hidden"
                     } w-5 h-5 md:w-6 md:h-6 cursor-pointer text-yellow-700 transition-all duration-300 ease-in`}
@@ -116,7 +116,7 @@ const SingleProduct = (props) => {
                     />
                   </svg>
                   <svg
-                    onClick={(e) => unWishReq(e, item._id, setWlist)}
+                    // onClick={(e) => unWishReq(e, item._id, setWlist)}
                     className={`${
                       !isWish(item._id, wList) && "hidden"
                     } w-5 h-5 md:w-6 md:h-6 cursor-pointer text-yellow-700 transition-all duration-300 ease-in`}
