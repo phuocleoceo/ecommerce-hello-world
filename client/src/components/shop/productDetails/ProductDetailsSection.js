@@ -244,15 +244,16 @@ const ProductDetailsSection = (props) => {
                       layoutData.inCart.includes(sProduct._id) === false) ? (
                       <div className="flex items-center space-x-2">
                         <span
-                          onClick={(e) =>
-                            updateQuantity(
-                              "decrease",
-                              sProduct.pQuantity,
-                              quantitiy,
-                              setQuantitiy,
-                              setAlertq
-                            )
-                          }
+                          // onClick={(e) =>
+                          //   updateQuantity(
+                          //     "decrease",
+                          //     sProduct.pQuantity,
+                          //     quantitiy,
+                          //     setQuantitiy,
+                          //     setAlertq
+                          //   )
+                          // }
+                          onClick={(e) => console.log('abc')}
                         >
                           <svg
                             className="w-5 h-5 fill-current cursor-pointer"
@@ -269,15 +270,16 @@ const ProductDetailsSection = (props) => {
                         </span>
                         <span className="font-semibold">{quantitiy}</span>
                         <span
-                          onClick={(e) =>
-                            updateQuantity(
-                              "increase",
-                              sProduct.pQuantity,
-                              quantitiy,
-                              setQuantitiy,
-                              setAlertq
-                            )
-                          }
+                          // onClick={(e) =>
+                          //   updateQuantity(
+                          //     "increase",
+                          //     sProduct.pQuantity,
+                          //     quantitiy,
+                          //     setQuantitiy,
+                          //     setAlertq
+                          //   )
+                          // }
+                          onClick={(e) => console.log('abc')}
                         >
                           <svg
                             className="w-5 h-5 fill-current cursor-pointer"
@@ -375,18 +377,19 @@ const ProductDetailsSection = (props) => {
                     </div>
                   ) : (
                     <div
-                      onClick={(e) =>
-                        addToCart(
-                          sProduct._id,
-                          quantitiy,
-                          sProduct.pPrice,
-                          layoutDispatch,
-                          setQuantitiy,
-                          setAlertq,
-                          fetchData,
-                          totalCost
-                        )
-                      }
+                      // onClick={(e) =>
+                      //   addToCart(
+                      //     sProduct._id,
+                      //     quantitiy,
+                      //     sProduct.pPrice,
+                      //     layoutDispatch,
+                      //     setQuantitiy,
+                      //     setAlertq,
+                      //     fetchData,
+                      //     totalCost
+                      //   )
+                      // }
+                      onClick={(e) => console.log('abc')}
                       style={{ background: "#303031" }}
                       className={`px-4 py-2 text-white text-center cursor-pointer uppercase`}
                     >
