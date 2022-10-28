@@ -200,6 +200,8 @@ class Product {
     }
   }
 
+
+  //day la ham lay san pham theo phan loai
   async getProductByCategory(req, res) {
     let { catId } = req.body;
     if (!catId) {
@@ -218,6 +220,8 @@ class Product {
     }
   }
 
+
+  //Day la ham lay san pham theo gia
   async getProductByPrice(req, res) {
     let { price } = req.body;
     if (!price) {
