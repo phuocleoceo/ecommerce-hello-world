@@ -9,12 +9,12 @@ const ProductCategory = (props) => {
     <Fragment>
       <div className="flex justify-between font-medium">
         <div
-          // onClick={(e) =>
-          //   dispatch({
-          //     type: "categoryListDropdown",
-          //     payload: !data.categoryListDropdown,
-          //   })
-          // }
+          onClick={(e) =>
+            dispatch({
+              type: "categoryListDropdown",
+              payload: !data.categoryListDropdown,
+            })
+          }
           className={`flex items-center space-x-1 cursor-pointer ${
             data.categoryListDropdown ? "text-yellow-700" : ""
           }`}
@@ -39,12 +39,12 @@ const ProductCategory = (props) => {
         </div>
         <div className="flex space-x-2">
           <div
-            // onClick={(e) =>
-            //   dispatch({
-            //     type: "filterListDropdown",
-            //     payload: !data.filterListDropdown,
-            //   })
-            // }
+            onClick={(e) =>
+              dispatch({
+                type: "filterListDropdown",
+                payload: !data.filterListDropdown,
+              })
+            }
             className={`flex items-center space-x-1 cursor-pointer ${
               data.filterListDropdown ? "text-yellow-700" : ""
             }`}
@@ -69,12 +69,12 @@ const ProductCategory = (props) => {
           </div>
           <span>/</span>
           <div
-            // onClick={(e) =>
-            //   dispatch({
-            //     type: "searchDropdown",
-            //     payload: !data.searchDropdown,
-            //   })
-            // }
+            onClick={(e) =>
+              dispatch({
+                type: "searchDropdown",
+                payload: !data.searchDropdown,
+              })
+            }
             className={`flex items-center space-x-1 cursor-pointer ${
               data.searchDropdown ? "text-yellow-700" : ""
             }`}
