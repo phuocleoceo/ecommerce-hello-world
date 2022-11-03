@@ -41,13 +41,13 @@ const Navber = (props) => {
             </span>
             <span
               className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
-              // onClick={(e) => history.push("/blog")}
+              onClick={(e) => history.push("/blog")}
             >
               Blog
             </span>
             <span
               className="hover:bg-gray-200 px-4 py-3 rounded-lg font-light tracking-widest hover:text-gray-800 cursor-pointer"
-              // onClick={(e) => history.push("/contact-us")}
+              onClick={(e) => history.push("/contact-us")}
             >
               Contact us
             </span>
@@ -73,7 +73,7 @@ const Navber = (props) => {
               style={{ letterSpacing: "0.10rem" }}
               className="flex items-left text-center font-bold uppercase text-gray-800 text-2xl cursor-pointer px-2 text-center"
             >
-              Bye world
+              HelloWorld
             </span>
           </div>
           <div
@@ -81,12 +81,12 @@ const Navber = (props) => {
             style={{ letterSpacing: "0.70rem" }}
             className="hidden lg:block flex items-left col-span-1 text-center text-gray-800 font-bold tracking-widest uppercase text-2xl cursor-pointer"
           >
-            Bye world
+            HelloWorld
           </div>
           <div className="flex items-right col-span-2 lg:col-span-1 flex justify-end">
             {/*  WishList Page Button */}
             <div
-              // onClick={(e) => history.push("/wish-list")}
+              onClick={(e) => history.push("/wish-list")}
               className="hover:bg-gray-200 rounded-lg px-2 py-2 cursor-pointer"
               title="Wishlist"
             >
@@ -134,7 +134,7 @@ const Navber = (props) => {
                       <Fragment>
                         <li className="flex flex-col text-gray-700 w-48 shadow-lg">
                           <span
-                            // onClick={(e) => history.push("/user/orders")}
+                            onClick={(e) => history.push("/user/orders")}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
                           >
                             <span>
@@ -156,7 +156,7 @@ const Navber = (props) => {
                             <span>My Orders</span>
                           </span>
                           <span
-                            // onClick={(e) => history.push("/user/profile")}
+                            onClick={(e) => history.push("/user/profile")}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
                           >
                             <span>
@@ -178,7 +178,7 @@ const Navber = (props) => {
                             <span>My Account</span>
                           </span>
                           <span
-                            // onClick={(e) => history.push("/wish-list")}
+                            onClick={(e) => history.push("/wish-list")}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
                           >
                             <span>
@@ -200,7 +200,7 @@ const Navber = (props) => {
                             <span>My Wishlist</span>
                           </span>
                           <span
-                            // onClick={(e) => history.push("/user/setting")}
+                            onClick={(e) => history.push("/user/setting")}
                             className="flex space-x-1 py-2 px-8 hover:bg-gray-400 cursor-pointer"
                           >
                             <span>
@@ -255,7 +255,7 @@ const Navber = (props) => {
                       <Fragment>
                         <li className="flex flex-col text-gray-700 w-48 shadow-lg">
                           <span
-                            // onClick={(e) => history.push("/admin/dashboard")}
+                            onClick={(e) => history.push("/admin/dashboard")}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
                           >
                             <span>
