@@ -35,31 +35,6 @@ class Customize {
     }
   }
 
-  async deleteSlideImage(req, res) {
-    let { id } = req.body;
-    if (!id) {
-      return res.json({ error: "All field required" });
-    } else {
-      try {
-        let deletedSlideImage = await customizeModel.findById(id);
-        const filePath = `../server/public/uploads/customize/${deletedSlideImage.slideImage}`;
-
-        let deleteImage = await customizeModel.findByIdAndDelete(id);
-        if (deleteImage) {
-          // Delete Image from uploads -> customizes folder
-          fs.unlink(filePath, (err) => {
-            if (err) {
-              console.log(err);
-            }
-            return res.json({ success: "Image deleted successfully" });
-          });
-        }
-      } catch (err) {
-        console.log(err);
-      }
-    }
-  }
-
   async getAllData(req, res) {
     try {
       let Categories = await categoryModel.find({}).count();
