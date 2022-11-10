@@ -330,6 +330,8 @@ class Product {
     }
   }
 
+
+//Day la ham xoa review
   async deleteReview(req, res) {
     let { rId, pId } = req.body;
     if (!rId) {
