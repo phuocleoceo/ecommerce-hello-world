@@ -131,9 +131,9 @@ const ReviewForm = (props) => {
           {/* Review Form */}
           <div className="space-y-4">
             <div className="flex flex-col">
-              <label htmlFor="textArea">
+              {/* <label htmlFor="textArea">
                 Review <span className="text-sm text-gray-600">*</span>
-              </label>
+              </label> */}
               <textarea
                 onChange={(e) => setFdata({ ...fData, review: e.target.value })}
                 value={fData.review}
