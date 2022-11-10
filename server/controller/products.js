@@ -277,6 +277,7 @@ class Product {
     }
   }
 
+  //Day la ham them Review
   async postAddReview(req, res) {
     let { pId, uId, rating, review } = req.body;
     if (!pId || !rating || !review || !uId) {
