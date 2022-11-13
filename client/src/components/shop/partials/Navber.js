@@ -200,7 +200,7 @@ const Navber = (props) => {
                             <span>My Wishlist</span>
                           </span>
                           <span
-                            // onClick={(e) => history.push("/user/setting")}
+                            onClick={(e) => history.push("/user/setting")}
                             className="flex space-x-1 py-2 px-8 hover:bg-gray-400 cursor-pointer"
                           >
                             <span>
