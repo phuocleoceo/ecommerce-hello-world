@@ -67,7 +67,7 @@ class Category {
       });
       let edit = await editCategory.exec();
       if (edit) {
-        return res.json({ success: "Category edit successfully" });
+        return res.json({ success: "Category edit successfully!!!" });
       }
     } catch (err) {
       console.log(err);
