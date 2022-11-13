@@ -62,7 +62,7 @@ class Product {
     else if (pName.length > 255 || pDescription.length > 3000) {
       Product.deleteImages(images, "file");
       return res.json({
-        error: "Name 255 & Description must not be 3000 charecter long",
+        error: "Name 255 & Description must not be 3000 charecter long!",
       });
     }
     // Validate Images
