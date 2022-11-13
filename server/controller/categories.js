@@ -90,7 +90,7 @@ class Category {
             if (err) {
               console.log(err);
             }
-            return res.json({ success: "Category deleted successfully" });
+            return res.json({ success: "Category deleted successfully!!!" });
           });
         }
       } catch (err) {
