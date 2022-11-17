@@ -22,7 +22,7 @@ const Product = () => {
       }
     }, 50);
   };
-
+ //Component xoa item ra khoi wishlist
   const removeFromWishList = (id) => {
     let list = localStorage.getItem("wishList")
       ? JSON.parse(localStorage.getItem("wishList"))
