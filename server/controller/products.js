@@ -235,7 +235,8 @@ class Product {
         if (products) {
           return res.json({ Products: products });
         }
-      } catch (err) {
+      } catch ( err ) {
+        
         return res.json({ error: "Filter product wrong" });
       }
     }
