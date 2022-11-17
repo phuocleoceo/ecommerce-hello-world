@@ -94,7 +94,7 @@ class Product {
       }
     }
   }
-
+//Day la ham edit product
   async postEditProduct(req, res) {
     let {
       pId,
