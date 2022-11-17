@@ -86,7 +86,7 @@ const Navber = (props) => {
           <div className="flex items-right col-span-2 lg:col-span-1 flex justify-end">
             {/*  WishList Page Button */}
             <div
-              // onClick={(e) => history.push("/wish-list")}
+              onClick={(e) => history.push("/wish-list")}
               className="hover:bg-gray-200 rounded-lg px-2 py-2 cursor-pointer"
               title="Wishlist"
             >
@@ -178,7 +178,7 @@ const Navber = (props) => {
                             <span>My Account</span>
                           </span>
                           <span
-                            // onClick={(e) => history.push("/wish-list")}
+                            onClick={(e) => history.push("/wish-list")}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
                           >
                             <span>
@@ -255,7 +255,7 @@ const Navber = (props) => {
                       <Fragment>
                         <li className="flex flex-col text-gray-700 w-48 shadow-lg">
                           <span
-                            // onClick={(e) => history.push("/admin/dashboard")}
+                            onClick={(e) => history.push("/admin/dashboard")}
                             className="flex space-x-2 py-2 px-8 hover:bg-gray-400 cursor-pointer"
                           >
                             <span>
