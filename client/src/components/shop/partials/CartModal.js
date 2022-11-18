@@ -92,6 +92,7 @@ const CartModal = () => {
               </div>
             </div>
             <div className="m-4 flex-col">
+            
               {products &&
                 products.length !== 0 &&
                 products.map((item, index) => {
