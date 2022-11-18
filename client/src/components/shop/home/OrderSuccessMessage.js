@@ -11,7 +11,7 @@ const OrderSuccessMessage = (props) => {
         } fixed bottom-0 flex justify-between items-center z-30 w-full bg-gray-800 text-white text-lg py-8 md:py-16 md:text-xl px-4 text-center`}
       >
         <span className="w-10/12 md:w-full">
-          Your Order in process. Wait 2 days to deliver.
+          Your Order in process. It will ship to you on <span id="datetime"></span>.
         </span>
         <span
           onClick={(e) => dispatch({ type: "orderSuccess", payload: false })}
@@ -31,6 +31,14 @@ const OrderSuccessMessage = (props) => {
           </svg>
         </span>
       </div>
+
+
+      <script>
+      var dt = new Date();
+      var currentDay = dt.getDate() + 2;
+      var currentMonth = dt.getMonth();
+      document.getElementById("datetime").innerHTML= currentDay + '/' + currentMonth + '/' +  dt.getFullYear();
+      </script>
     </Fragment>
   );
 };

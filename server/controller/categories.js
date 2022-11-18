@@ -63,13 +63,11 @@ class Category {
     }
     try {
       let editCategory = categoryModel.findByIdAndUpdate(cId, {
-        cDescription,
-        cStatus,
         updatedAt: Date.now(),
       });
       let edit = await editCategory.exec();
       if (edit) {
-        return res.json({ success: "Category edit successfully" });
+        return res.json({ success: "Category edit successfully!!!" });
       }
     } catch (err) {
       console.log(err);
@@ -92,7 +90,7 @@ class Category {
             if (err) {
               console.log(err);
             }
-            return res.json({ success: "Category deleted successfully" });
+            return res.json({ success: "Category deleted successfully!!!" });
           });
         }
       } catch (err) {

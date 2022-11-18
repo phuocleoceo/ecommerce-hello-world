@@ -10,7 +10,7 @@ export const DashboardContext = createContext();
 const DashboardComponent = () => {
   return (
     <Fragment>
-      <DashboardCard />
+      {/* <DashboardCard /> */}
       <Customize />
       <TodaySell />
     </Fragment>

@@ -62,7 +62,7 @@ class Product {
     else if (pName.length > 255 || pDescription.length > 3000) {
       Product.deleteImages(images, "file");
       return res.json({
-        error: "Name 255 & Description must not be 3000 charecter long",
+        error: "Name 255 & Description must not be 3000 charecter long!",
       });
     }
     // Validate Images
@@ -94,7 +94,7 @@ class Product {
       }
     }
   }
-
+//Day la ham edit product
   async postEditProduct(req, res) {
     let {
       pId,
@@ -235,7 +235,8 @@ class Product {
         if (products) {
           return res.json({ Products: products });
         }
-      } catch (err) {
+      } catch ( err ) {
+        
         return res.json({ error: "Filter product wrong" });
       }
     }
@@ -277,6 +278,7 @@ class Product {
     }
   }
 
+  //Day la ham them Review
   async postAddReview(req, res) {
     let { pId, uId, rating, review } = req.body;
     if (!pId || !rating || !review || !uId) {
@@ -329,6 +331,8 @@ class Product {
     }
   }
 
+
+//Day la ham xoa review
   async deleteReview(req, res) {
     let { rId, pId } = req.body;
     if (!rId) {

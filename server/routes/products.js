@@ -4,15 +4,16 @@ const productController = require("../controller/products");
 const multer = require("multer");
 
 var storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "public/uploads/products");
-  },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + "_" + file.originalname);
-  },
+    destination: function(req, file, cb) {
+        cb(null, "public/uploads/products");
+    },
+    filename: function(req, file, cb) {
+        cb(null, Date.now() + "_" + file.originalname);
+    },
 });
 
 const upload = multer({ storage: storage });
+
 
 router.get("/all-product", productController.getAllProduct);
 router.post("/product-by-category", productController.getProductByCategory);

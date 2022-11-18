@@ -1,6 +1,6 @@
 var braintree = require("braintree");
 require("dotenv").config();
-
+// Tao braintree token
 var gateway = new braintree.BraintreeGateway({
   environment: braintree.Environment.Sandbox,
   merchantId: process.env.BRAINTREE_MERCHANT_ID,
@@ -18,6 +18,8 @@ class brainTree {
     });
   }
 
+
+// Tao chuc nang payment
   paymentProcess(req, res) {
     let { amountTotal, paymentMethod } = req.body;
     gateway.transaction.sale(
